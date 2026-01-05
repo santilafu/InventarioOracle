@@ -1,5 +1,6 @@
-//Clase hija que representa productos de ropa
+package org.inventario.model;
 
+//Clase hija que representa productos de ropa
 public class Ropa extends Producto {
 
     private String talla;
@@ -12,7 +13,7 @@ public class Ropa extends Producto {
 
     @Override // Cada hijo dira que tipo de producto es para guardar en la base de datos
     public String getTipo() {
-        return "Ropa";
+        return "org.inventario.model.Ropa";
     }
     // Getters y Setters
     public String getTalla() {
@@ -24,7 +25,7 @@ public class Ropa extends Producto {
 
     @Override
     public String toString() {
-        return super.toString() + "Ropa{" + "talla=" + talla + '}';
+        return super.toString() + "org.inventario.model.Ropa{" + "talla=" + talla + '}';
     }
 
 }

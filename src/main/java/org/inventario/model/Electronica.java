@@ -1,6 +1,7 @@
-// Clase hija que representa productos de electrónica
+package org.inventario.model;
 
-public class Electronica extends Producto{
+// Clase hija que representa productos de electrónica
+public class Electronica extends Producto {
 
     private String modelo;
 
@@ -12,7 +13,7 @@ public class Electronica extends Producto{
 
     @Override
     public String getTipo() {
-        return "Electronica";
+        return "org.inventario.model.Electronica";
     }
     // Getters y Setters
     public String getModelo() {
@@ -24,6 +25,6 @@ public class Electronica extends Producto{
 
     @Override
     public String toString() {
-        return super.toString() + "Electronica{" + "modelo=" + modelo + '}';
+        return super.toString() + "org.inventario.model.Electronica{" + "modelo=" + modelo + '}';
     }
 }

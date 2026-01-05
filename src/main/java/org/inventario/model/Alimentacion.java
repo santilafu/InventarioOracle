@@ -1,8 +1,9 @@
-//Clase hija que representa productos de Alimentación
+package org.inventario.model;
 
+//Clase hija que representa productos de Alimentación
 import java.time.LocalDate;
 
-public class Alimentacion extends Producto{
+public class Alimentacion extends Producto {
 
     private LocalDate fechaCaducidad;
 
@@ -14,7 +15,7 @@ public class Alimentacion extends Producto{
 
     @Override
     public String getTipo() {
-        return "Alimentacion";
+        return "org.inventario.model.Alimentacion";
     }
 
     // Getters y Setters
@@ -27,6 +28,6 @@ public class Alimentacion extends Producto{
 
     @Override
     public String toString() {
-        return super.toString() + "Alimentacion{" + "fechaCaducidad=" + fechaCaducidad + '}';
+        return super.toString() + "org.inventario.model.Alimentacion{" + "fechaCaducidad=" + fechaCaducidad + '}';
     }
 }

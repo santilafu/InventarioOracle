@@ -1,3 +1,5 @@
+package org.inventario.model;
+
 // Clase Padre que representa un producto genérico
 public abstract class Producto {
 
@@ -35,8 +37,8 @@ public abstract class Producto {
         this.precio = precio;
     }
 
-    @Override // toString para facilitar la impresión de objetos Producto
+    @Override // toString para facilitar la impresión de objetos org.inventario.model.Producto
     public String toString() {
-        return "Producto [id=" + id + ", nombre=" + nombre + ", precio=" + precio + "]";
+        return "org.inventario.model.Producto [id=" + id + ", nombre=" + nombre + ", precio=" + precio + "]";
     }
 }
